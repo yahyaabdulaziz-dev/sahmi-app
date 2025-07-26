@@ -1,0 +1,22 @@
+
+import 'package:flutter/material.dart';
+import 'home_screen.dart'; // لاحقًا سترفع هذا الملف أيضًا
+
+void main() {
+  runApp(SahmiApp());
+}
+
+class SahmiApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'سهمي',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+        fontFamily: 'Tajawal', // خط عربي مريح وجميل
+      ),
+      home: HomeScreen(),
+    );
+  }
+}
